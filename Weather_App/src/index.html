@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather List</title>
+    <script defer src="./script.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-gray-600 w-screen h-lvh flex">
+      <div
+        class="bg-slate-300 w-2/4 h-1/2 max-h-full self-center mx-auto rounded-2xl text-center"
+      >
+        <h3 class="p-8 font-bold h-auto text-2xl w-full">Current Weather</h3>
+        <label for="input--city" class="px-2 w-full">
+          <input
+            id="input--city"
+            type="text"
+            name="input--city"
+            class="h-12 border-none px-2 rounded-md"
+            placeholder="Enter your city"
+          />
+        </label>
+        <button
+          id="search--btn"
+          type="button"
+          class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-2 me-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+        >
+          Search
+        </button>
+        <button
+          id="clear--btn"
+          type="button"
+          class="text-white bg-purple-900-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-2 me-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+        >
+          Clear All
+        </button>
+        <div id="content">
+          <p
+            id="error--msg"
+            class="hidden text-sm text-red-500 font-bold mb-2 p-2"
+          >
+            Invalid City Provide. Please try again!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
