@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce App</title>
+    <script defer src="./script.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="bg-gray-600 w-screen h-lvh min-h-fit flex flex-col justify-center items-center text-center"
+    >
+      <div
+        id="products--list"
+        class="bg-slate-300 w-2/4 h-1/2 overflow-y-auto mx-auto rounded-2xl"
+      >
+        <h3 class="p-8 font-bold h-auto text-2xl w-full">Products</h3>
+        <ul></ul>
+        <p id="error--msg" class="text-red-600">
+          Your cart is Empty please add some products :)
+        </p>
+      </div>
+      <div class="bg-slate-400 h-1/2 w-2/4 mx-auto mt-2 rounded-2xl">
+        <h2 class="p-8 font-bold h-auto text-2xl w-full">Shopping Cart</h2>
+        <p id="empty-cart--msg" class="text-red-600">Your cart is empty</p>
+        <div class="w-full h-1/2">
+          <ul
+            id="cart--list"
+            class="w-full h-auto mx-auto flex flex-col justify-start items-start max-h-fit"
+          >
+            <!-- <li
+              class="border-2 my-5 bg-gray-400 border-black mx-auto w-11/12 flex justify-evenly items-center"
+            >
+              <span>${item.name} - $ ${item.price}</span>
+              <div>
+                <button
+                  class="border-2 border-black w-6 h-fit p-1 m-2 text-center"
+                >
+                  +
+                </button>
+                <span>1</span>
+                <button
+                  class="border-2 border-black w-6 h-fit p-1 m-2 text-center"
+                >
+                  -
+                </button>
+              </div>
+              <button
+                id="delete-item--cart"
+                class="border-2 align-sub text-black border-yellow-200 bg-yellow-400 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-2 me-2 mb-2 dark:bg-yellow-400 dark:hover:bg-yellow-400 focus:outline-none dark:focus:ring-yellow-400"
+              >
+                Delete
+              </button>
+            </li> -->
+          </ul>
+        </div>
+        <!-- add flex in place of hidden when want to show sum-->
+        <div id="subtotal--msg" class="hidden justify-around items-center">
+          <h3><strong>Subtotal:</strong></h3>
+          <span>$ <span id="total"></span></span>
+          <button
+            id="checkout--btn"
+            class="border-2 align-sub text-black border-yellow-200 bg-yellow-400 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-2 me-2 mb-2 dark:bg-yellow-400 dark:hover:bg-yellow-400 focus:outline-none dark:focus:ring-yellow-400"
+          >
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
