@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <script defer src="./script.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-gray-600 w-screen h-lvh flex">
+      <div
+        class="bg-slate-300 w-2/4 min-h-fit self-center mx-auto rounded-2xl text-center"
+      >
+        <h3 class="p-8 font-bold h-auto text-2xl w-full">To Do List</h3>
+        <label for="todo-input" class="px-2 w-full">
+          <input
+            id="todo-input"
+            type="text"
+            name="todo-input"
+            class="h-12 border-none px-2 rounded-md"
+            placeholder="Add Todo Item"
+          />
+          <button
+            id="add-task-btn"
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-2 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            Add To List
+          </button>
+        </label>
+        <ul
+          class="grid grid-flow-row m-4 text-wrap text-center"
+          id="todo-list"
+        ></ul>
+      </div>
+    </div>
+  </body>
+</html>
